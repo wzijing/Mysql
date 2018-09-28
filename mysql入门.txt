@@ -1,4 +1,4 @@
-//建表
+//陆篓卤铆
 drop table tb;
 create table tb(
 id int(4) auto_increment,
@@ -7,21 +7,23 @@ dept varchar(5),
 primary key(id)
 )ENGINE=MyISAM AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
 
-//插入数据
+//虏氓脠毛脢媒戮脻
 INSERT INTO `userdb`.`tb` (`id`, `name`, `dept`) VALUES ('1', 'a', 'd1');
 INSERT INTO `userdb`.`tb` (`id`, `name`, `dept`) VALUES ('2', 'b', 'd2');
 INSERT INTO `userdb`.`tb` (`id`, `name`, `dept`) VALUES ('3', 'c', 'd3');
-//创建索引1
+//麓麓陆篓脣梅脪媒1
 create index dept_index on tb(dept);
 create unique index name_index on tb(name);
 create index dept_name_index  on tb(dept,name);
-//创建索引2
+//麓麓陆篓脣梅脪媒2
 alter table tb add index dept_index(dept);
 alter table tb add unique index name_index(name);
 alter table tb add index dept_name_index(dept,name); 
-//删除索引
-drop index 索引名 on 表名
+//脡戮鲁媒脣梅脪媒
+drop index 脣梅脪媒脙没 on 卤铆脙没
 drop index name_index on tb;
 
-//展示添加的索引
+//脮鹿脢戮脤铆录脫碌脛脣梅脪媒
 show index from tb;
+
+//iconv 绔熺劧鏃犳硶鏀瑰彉ISO-5899缂栫爜
