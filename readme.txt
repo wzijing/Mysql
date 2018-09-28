@@ -1,3 +1,1 @@
-Mysql jichu
-dfgjfdkjbfgKJhdfuighkbfdjkghddHIUhdurighjfgbk
-uiiuhgiug
+Mysql仓库存放与Mysql相关的代码，包括Mysql基础操作的练习代码、遇到的问题等
