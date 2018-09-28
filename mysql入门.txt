@@ -1,0 +1,27 @@
+//建表
+drop table tb;
+create table tb(
+id int(4) auto_increment,
+name varchar(5),
+dept varchar(5),
+primary key(id)
+)ENGINE=MyISAM AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
+
+//插入数据
+INSERT INTO `userdb`.`tb` (`id`, `name`, `dept`) VALUES ('1', 'a', 'd1');
+INSERT INTO `userdb`.`tb` (`id`, `name`, `dept`) VALUES ('2', 'b', 'd2');
+INSERT INTO `userdb`.`tb` (`id`, `name`, `dept`) VALUES ('3', 'c', 'd3');
+//创建索引1
+create index dept_index on tb(dept);
+create unique index name_index on tb(name);
+create index dept_name_index  on tb(dept,name);
+//创建索引2
+alter table tb add index dept_index(dept);
+alter table tb add unique index name_index(name);
+alter table tb add index dept_name_index(dept,name); 
+//删除索引
+drop index 索引名 on 表名
+drop index name_index on tb;
+
+//展示添加的索引
+show index from tb;
